@@ -238,13 +238,25 @@ img {
     .row {
         display: block;
         justify-content: center;
+        align-items: center;
+        justify-content: center;
 
     }
     
+    .images {
+        float: none;
+        align-items: center;
+        justify-content: center;
+    }
+
     .main-section {
         max-width: 100%;
         margin: auto;
         padding: 0em;
+    }
+
+    .center-image {
+  
     }
 
     .overlay {
