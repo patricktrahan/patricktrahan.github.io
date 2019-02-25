@@ -155,6 +155,7 @@ img {
 
 .images {
     float: right;
+    padding-right: 10px;
 }
 
 .imageGrid {
