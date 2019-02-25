@@ -1,0 +1,338 @@
+#sketch-holder {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-left:  0em;
+    padding-right: 0em;
+    margin-bottom: 50px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding-right: 7%;
+    padding-left: 7%;
+    margin-left: 8em;
+    margin-right: 8em;
+
+}
+
+p {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkred;
+}
+
+a:hover {
+    color: red;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-section {
+    background-color: rgba(0,0,0,0.04);
+    padding: 1em;
+}
+
+.title {
+    padding: .7em;
+}
+
+.title2 {
+    padding: 1.2em;
+}
+
+.center {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+img {
+    max-width: 90%;
+}
+
+.center-image {
+    padding-left: 8%;
+}
+
+.columns {
+    column-count: 2;
+}
+
+.row {
+    display: flex;
+}
+
+.mail {
+    margin-top: 12em;
+}
+
+.space {
+    margin-top: 7px;
+}
+
+.maxWidth {
+    max-width: 800px;
+}
+
+.name {
+    margin-bottom: -.4em;
+    color: red;
+}
+
+.name2 {
+    margin-bottom:;
+}
+
+
+.overlay-content {
+    padding-top: 100px;
+    float: left;
+    text-decoration: none;
+    font-size: 18px;
+    width: 1px;
+}
+
+.closebtn {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.menuText {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: .1em;
+    transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+}
+
+.menuEmail {
+}
+
+.menuText:hover, .menuText:focus {
+    -webkit-transition-duration: 0.1s;
+    transition-duration: : 0.1s;
+    color: red;   
+}
+
+.activePage {
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+
+.content {
+    padding-top:S 150px;
+    padding-left: 50%;
+    display: block;
+}
+
+.images {
+    float: right;
+}
+
+.imageGrid {
+       max-width: 30%;
+       padding: 5px;
+
+}
+
+.imageArea {
+    overflow: hidden;
+}
+
+
+.social:hover, .social:focus {
+    -webkit-transition-duration: 0.1s;
+    transition-duration: : 0.1s;
+    color: red;
+}
+
+.social {
+    transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+    color: black;
+    padding-top: 4px;
+    text-decoration: none;
+    padding-right: 1em;
+    padding-bottom: 2em;
+
+}
+
+.footer {
+    padding-top: 265px;
+}
+
+.copyright {
+    padding-top: 100px;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.email {    
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none;
+}
+
+.email:hover {    
+    background-color: lightgray;
+}
+
+
+/* DROPDOWN MENU STYLE ------------------------------------------------*/
+@media screen and (max-width: 1300px) {
+
+    #sketch-holder {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        padding-left:  0em;
+        padding-right: 0em;
+        margin-bottom: 0px;
+    }
+
+    body {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .column {
+          float: none;
+          width: 100%;
+          padding: 10px;
+    }
+
+    .row {
+        display: block;
+        justify-content: center;
+
+    }
+    
+    .main-section {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 0%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        padding: 2px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        float: right;
+        padding-right: 9%;
+        padding-top: 7%;
+        top:;
+        right:;
+        font-size: 30px;
+        margin-top:;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    .copyright {
+        padding-top: 50px;
+    }
+
+    .imageArea {
+        padding-left: 0%;
+        margin-top: -80px;
+    }
+
+    .images {
+        float: none;
+    }
+    
+
+    .imageGrid {
+        min-width: 50%;
+        padding: 15px;
+    }
+
+    .content {
+        padding-left: 0%;
+    }
+
+    .columns {
+        column-count: 1;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 15px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+
+}
+/* DROPDOWN MENU STYLE END----------------------------------------------*/
