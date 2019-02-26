@@ -16,11 +16,11 @@ function setup() {
   noStroke();
   
   phase = 0;
-  speed = .03;
-  maxCircleSize = 15;
+  speed = .01;
+  //maxCircleSize = 15;
   numRows = 2;
-  numCols = 26;
-  numStrands = 4;
+  numCols = 36;
+  numStrands = 6;
   
   // Set colors
   rA = 133;
@@ -41,15 +41,17 @@ function setup() {
 // Draw aimation
 function draw() {
 
+  maxCircleSize = windowWidth/60;
+
   background(245, 245, 245);
   phase = frameCount * speed;
   
   for(var strand = 0; strand < numStrands; strand += 2) {
     var strandPhase = phase + map(strand, 0, numStrands, 0, TWO_PI);
     
-    for(var col = 0; col < numCols; col += 1) {
+    for(var col = 20; col < numCols; col += 1) {
       var colOffset = map(col, 10, numCols, 0, TWO_PI);
-      var x = map(col, 0, numCols, 60, width - 50);
+      var x = map(col, 20, numCols, 60, width - 50);
       
       for(var row = 0; row < numRows; row += 1) {
         var y = height/2 + row * 10 + cos(strandPhase + colOffset) * 20;
