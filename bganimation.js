@@ -71,6 +71,8 @@ function windowResized() {
 	resizeCanvas(windowWidth/resize, 100);
 }
 
+// changes the color of the animations randomly when clicked or touched.
+
 function mousePressed() {
 
 	if (mouseX < windowWidth/resize && mouseX > windowWidth/40 
