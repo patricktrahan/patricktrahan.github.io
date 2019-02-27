@@ -255,8 +255,7 @@ img {
     }
     
     .center-image {
-        padding-left: 8%;
-        clear: both;
+        justify-content: center;
     }
 
     .images {
