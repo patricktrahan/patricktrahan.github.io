@@ -253,7 +253,10 @@ img {
         justify-content: center;
 
     }
-   
+    
+    .center-image {
+        margin-left: 0%;
+    }
 
     .images {
         float: none;
