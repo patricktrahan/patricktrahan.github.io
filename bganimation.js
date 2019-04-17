@@ -68,16 +68,16 @@ function draw() {
 // Resize animation based on browser window Size
 function windowResized() {
 
-	resizeCanvas(windowWidth/resize, 100);
+  resizeCanvas(windowWidth/resize, 100);
 }
 
 // changes the color of the animations randomly when clicked or touched.
 
 function mousePressed() {
 
-	if (mouseX < windowWidth/resize && mouseX > windowWidth/40 
-		&& mouseY > 20 && mouseY < 90) {
-		colorA = color(random(255), random(255), random(255));
-		colorB = color(random(255), random(255), random(255));
-	}
+  if (mouseX < windowWidth/resize && mouseX > windowWidth/40 
+    && mouseY > 20 && mouseY < 90) {
+    colorA = color(random(255), random(255), random(255));
+    colorB = color(random(255), random(255), random(255));
+  }
 }

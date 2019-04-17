@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
 
 <!--P5 LIBRARY-->
 <script type="text/javascript" src="p5.min.js"></script>
@@ -14,14 +15,13 @@
 <!--P5 ANIMATION-->
 <script type="text/javascript" src="bganimation.js"></script>
 
-
-<body align="center">
-  <h1 align="left" class="name"><strong>patrick trahan</strong></h1>
-  <h3 align="left" class="name2">personal projects</h3>
+<body align="center" data-aos="fade-in">
+  <h1 align="left" class="name" data-aos="fade-in" data-aos-delay="100" ><strong>patrick trahan</strong></h1>
+  <h3 align="left" class="name2" data-aos="fade-in" data-aos-delay="150">personal projects</h3>
 
     <!-- RESUME -->
     <!--<a class="menuText" href="#">Resume</a>-->
-  <div align="left">
+  <div align="left" data-aos="fade-in" data-aos-delay="200">
     <!-- GITHUB -->
     <a style="font-size:20px" href="https://github.com/patricktrahan" target="_blank" class="fa fa-github social"></a>
 
@@ -33,14 +33,14 @@
   </div>
 
 <!--Main Content-->
-<div class="main-section">
+<div class="main-section" data-aos="fade-in" data-aos-delay="200">
   <div class="row">
     <div class="column">
       <h1 align="left" class="title">developer<br>artist</h1>
     </div>
     <div class="column">
       <div class="center">
-        <p align="left"> I currently work as a compositor in the visual eﬀects industry. My background is in both design and development. In my daily work I use JavaScript. My experience includes building websites (HTML, CSS, Javascript), current technologies (React, Angular), working with automated tool kits (Git, npm), and scripting (Python, Applescript). Personally I enjoy experimenting with web based art (p5.js), music (Tidal Cycles), photography and synthesizers.
+        <p align="left"> I currently work as a compositor in the visual eﬀects industry. My background is in both design and development. In my daily work I use JavaScript. My experience includes building websites (HTML, CSS, Javascript), current technologies (React, Angular), working with automated tool kits (Git, npm), and scripting (Python, Applescript). Personally I enjoy experimenting with creative coding (p5.js, Processing), music coding (Tidal Cycles, Sonic Pi), photography and synthesizers.
         </p>
       </div>
     </div>
@@ -50,10 +50,10 @@
 
 
   <!-- P5.js animation -->
-  <div id="sketch-holder"></div> 
+  <div id="sketch-holder" data-aos="zoom-out" data-aos-delay="500" data-aos-duration="600"></div> 
 
   <!-- Majestic Thorns Website -->
-  <div class="row">
+  <div class="row" data-aos="fade-left">
     <div class="column">
       <h3 align="left" class="title2">majestic thorns website</h3>
       <div class="center">
@@ -64,7 +64,7 @@
 
     <br>
 
-    <a  href="http://majesticthorns.com/" target="_blank">
+    <a href="http://majesticthorns.com/" target="_blank">
       <img src="media/majesticThornsHome.jpg">
     </a>
 
@@ -73,7 +73,7 @@
   <br><br><br>
 
   <!-- Web Synth--> 
-  <div class="row">
+  <div class="row" data-aos="fade-left">
     <div class="column">
     <h3 align="left" class="title2">synthesizer/music visualization</h3>
       <div class="center">
@@ -85,7 +85,7 @@
 
   <br>
 
-    <a  href="https://patricktrahan.github.io/webSynthesizerTest01/" target="_blank">
+    <a href="https://patricktrahan.github.io/webSynthesizerTest01/" target="_blank">
       <object data="media/websynth.gif" type="image/gif">
         <img src="media/websynth.jpg" alt="example">
       </object>
@@ -95,18 +95,13 @@
 
     <br><br><br>
 
-<!--  <div class="columns">
-      <h3 class="title2">Compositing Demo Reel</h3>
-    <div class="center">
-      <p>Demo reel for my compositing work.</p>
-      <div class="center">
-        <p> PLACE VIMEO LINK HERE </p>
-      </div>
-  </div>
-  <br><br><br> -->
-
   </div>
 </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
