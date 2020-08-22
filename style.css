@@ -67,6 +67,17 @@ a:hover {
     display: -moz-flex;
 }
 
+.row2 {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+}
+
+.row2:after {
+  display: table;
+  clear: both;
+}
+
 .main-section {
     background-color: rgba(0,0,0,0.04);
     padding: 1em;
@@ -185,6 +196,17 @@ object:hover {
         display: block;
         justify-content: center;
         align-items: center;
+    }
+
+    .row2 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .threeD {
+        padding-left: 10em;
+        padding-right: 10em;
     }
 
     .main-section {
