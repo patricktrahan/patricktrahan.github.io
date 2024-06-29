@@ -23,6 +23,16 @@ body {
 
 }
 
+.crop {
+        height: 1000px;
+        overflow: hidden;
+    }
+
+.crop img {
+        height: 1000px;
+        margin: -75px 0 0 -100px;
+    }
+
 .space {
     margin-top: 10em;
     margin-bottom: 20em;
@@ -43,6 +53,7 @@ p {
 a {
     text-decoration: none;
     font-weight: bold;
+    padding-right: 8px;
     color: rgb(26,129,161,1);
 }
 
@@ -79,7 +90,7 @@ a:hover {
 }
 
 .main-section {
-    background-color: rgba(0,0,0,0.04);
+    background-color: rgba(0,0,0,0);
     padding: 1em;
 }
 
@@ -162,6 +173,21 @@ object:hover {
 .art {
     width: 100%;
 }
+
+ul {
+    list-style-type: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+.threeD {
+    max-width: 600px;
+    }
 
 @media screen and (max-width: 1300px) {
 
