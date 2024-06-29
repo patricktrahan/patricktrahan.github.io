@@ -17,6 +17,7 @@ function setup() {
   
   phase = 0;
   speed = .01;
+
   //maxCircleSize = 15;
   numRows = 2;
   numCols = 36;
@@ -43,7 +44,7 @@ function draw() {
 
   maxCircleSize = windowWidth/60;
 
-  background(245, 245, 245);
+  background(255, 255, 255);
   phase = frameCount * speed;
   
   for(var strand = 0; strand < numStrands; strand += 2) {
