@@ -1,0 +1,230 @@
+<!--1 page Bootstrap based portfolio website to showcase web dev and creative projects -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick D Trahan Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Bootstrap icons -->
+     
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body id="welcome">
+    <nav class="navbar navbar-expand-lg navbar-dark " >
+        <a class="navbar-brand" href="#welcome" onclick="scrollToSection(event)">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu();">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse animate" id="navbarNav">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" onclick="scrollToSection(event)">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects" onclick="scrollToSection(event)">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills" onclick="scrollToSection(event)">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" onclick="scrollToSection(event)">Contact</a>
+                </li>
+                
+            </ul>   
+        </div>
+    </nav>
+
+    <!-- Jumbotron Section -->
+    <header class="jumbotron text-center jumbotron-bg">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Patrick, a web developer with a background in VFX and digital art.</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container text-center">
+        <h2>About Me</h2>
+        <p> 
+            I am a passionate web developer with a strong foundation in both frontend and backend technologies. 
+            My journey began with a love for visual effects and digital art, which has shaped my approach to 
+            creating interactive web experiences. I enjoy solving complex problems and continuously 
+            learning new skills to enhance my craft.
+        </p>
+        <img src="media/Bike.jpg" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 200px; height: 200px; object-fit: cover;">  
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2 class="text-center">Projects</h2>
+        <div class="row">
+    
+            <!-- Weather App -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="media/WeatherData.jpg" class="card-img-top" alt="Weather Data">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Forecast App</h5>
+                        <p class="card-text">A web application that provides weather forecasts for selected locations using the weather.gov API.</p>
+                        <a target="_blank" href="https://github.com/patricktrahan/Weather_Data_API" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post App -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="media/BlogPostTemplate.jpg" class="card-img-top" alt="Blog Post App">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Post App</h5>
+                        <p class="card-text">A web application that allows users to create and manage blog posts.</p>
+                        <a target="_blank" href="https://github.com/patricktrahan/Blog" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Majestic Thorns Portfolio -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="media/MajesticThornsPortfolio.jpg" class="card-img-top" alt="Portfolio Website">
+                    <div class="card-body">
+                        <h5 class="card-title">Majestic Thorns Portfolio</h5>
+                        <p class="card-text">A portfolio website showcasing work by artist Kelly Chehardy</p>
+                        <a target="_blank" href="https://www.majesticthorns.com/" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simon Game -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="media/SimonGame.jpg" class="card-img-top" alt="Simon Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Simon Game</h5>
+                        <p class="card-text">A classic memory game where players must repeat a sequence of colors and sounds. </p>
+                        <a target="_blank" href="https://github.com/patricktrahan/Simon-Game" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mondrian Interactive -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="media/Mondrian.jpg" class="card-img-top" alt="Mondrian Interactive">
+                    <div class="card-body">
+                        <h5 class="card-title">Mondrian Interactive</h5>
+                        <p class="card-text">Mondrian web project. Each block changes to one of the existing colors randomly with a click.</p>
+                        <a target="_blank" href="https://github.com/patricktrahan/Mondrian-Interactive" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Synthesizer -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="media/WebSynth.jpg" class="card-img-top" alt="Web Synthesizer">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Synthesizer</h5>
+                        <p class="card-text">A web-based synthesizer that changes pitch and animation based on mouse movement.</p>
+                        <a target="_blank" href="https://github.com/patricktrahan/webSynthesizerTest01" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container text-center">
+    <h2 class="pb-2 border-bottom">Skills</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+            <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-display-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M6 12q0 1-.25 1.5H5a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-.75Q10 13 10 12h4c2 0 2-2 2-2V4c0-2-2-2-2-2H2C0 2 0 4 0 4v6c0 2 2 2 2 2z" />
+                </svg> </div>
+            <h3 class="fs-2 text-body-emphasis">Frontend</h3>
+            <p>HTML, CSS, JavaScript, Bootstrap, jQuery, React</p>
+        </div>  
+        <div class="feature col">
+            <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-database-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.904 1.777C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4s-.875 1.755-1.904 2.223C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777C2.875 5.755 2 5.007 2 4s.875-1.755 1.904-2.223" />
+                    <path
+                        d="M2 6.161V7c0 1.007.875 1.755 1.904 2.223C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777C13.125 8.755 14 8.007 14 7v-.839c-.457.432-1.004.751-1.49.972C11.278 7.693 9.682 8 8 8s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                    <path
+                        d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                    <path
+                        d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                </svg>
+               </svg> </div>
+            <h3 class="fs-2 text-body-emphasis">Backend</h3>
+            <p>Node.js, Express, PostgreSQL, REST APIs, Git, GitHub</p>
+        </div>
+        <div class="feature col">
+            <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brush-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04" />
+                </svg> </div>
+            <h3 class="fs-2 text-body-emphasis">Creative</h3>
+            <p>VFX, Photography, Design, Video Editing, Animation, Illustration</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- simple Contact no form Section -->
+    <section id="contact" class="container text-center">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, please reach out via email or connect with me on social media.</p>
+        <p>Email: <a target="_blank" href="mailto:patrickdtrahan@gmail.com">patrickdtrahan@gmail.com</a></p>
+    </section>
+
+    <!--Footer Section -->
+    <section>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-center">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+        <p>&copy; <span id="currentYear"></span> My Portfolio. All rights reserved.</p>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex ">
+        <li class="ms-3 "><a target="_blank" class="text-muted " href="https://www.linkedin.com/in/patricktrahan/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin social"
+            viewBox="0 0 16 16">
+            <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+        </svg></a></li>
+        <li class="ms-3"><a target="_blank" class="text-muted" href="https://github.com/patricktrahan"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github social"
+            viewBox="0 0 16 16">
+            <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+        </svg></a></li>
+        <!-- vimeo -->
+        <li class="ms-3"><a target="_blank" class="text-muted" href="https://vimeo.com/user2691480"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vimeo social"
+            viewBox="0 0 16 16">
+            <path
+                d="M15.992 4.204q-.106 2.334-3.262 6.393-3.263 4.243-5.522 4.243-1.4 0-2.367-2.583L3.55 7.523Q2.83 4.939 2.007 4.94q-.178.001-1.254.754L0 4.724a210 210 0 0 0 2.334-2.081q1.581-1.364 2.373-1.437 1.865-.185 2.298 2.553.466 2.952.646 3.666.54 2.447 1.186 2.445.5 0 1.508-1.587 1.006-1.587 1.077-2.415.144-1.37-1.077-1.37a3 3 0 0 0-1.185.261q1.183-3.86 4.508-3.756 2.466.075 2.324 3.2z" />
+        </svg></a></li>
+    </ul>
+</footer>
+</section>
+
+
+<!-- Scripts -->
+<script src="script.js"></script>
+
+</body>
+</html>
