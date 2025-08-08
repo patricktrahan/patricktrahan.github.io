@@ -17,6 +17,7 @@ a {
 a:hover {
     color: #F4A261;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 .light-text {

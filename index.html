@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
-<body id="welcome">
+<body onload="createWaveAnimation()" id="welcome">
     <nav class="navbar navbar-expand-lg navbar-dark " >
         <a class="navbar-brand" href="#welcome" onclick="scrollToSection(event)">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu();">
@@ -39,9 +39,9 @@
     </nav>
 
     <!-- Jumbotron Section -->
-    <header class="jumbotron text-center jumbotron-bg">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Patrick, a web developer with a background in VFX and digital art.</p>
+    <header class="jumbotron text-center jumbotron-bg" >
+        <h1>Patrick D Trahan Portfolio</h1>
+        <p>Web Developer | VFX Artist | Digital Creative.</p>
     </header>
 
     <!-- About Me Section -->
@@ -57,9 +57,9 @@
     </section>
 
 
-    <!-- Projects Section -->
+    <!-- Web Development Projects Section -->
     <section id="projects" class="container">
-        <h2 class="text-center">Projects</h2>
+        <h2 class="text-center pb-2 border-bottom">Web Development Projects</h2>
         <div class="row">
     
             <!-- Weather App -->
@@ -134,6 +134,35 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Creative Projects Section -->
+    <section id="creative-projects" class="container text-center">
+        <h2 class="pb-2 border-bottom">Creative Projects</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2 ">
+            <!-- VFX -->
+            <div class="col md-4">
+                <div class="">
+                    <div class="card-body">
+                        <h3 class="card-title">VFX</h3>
+                        <p class="card-text">I spent 14 years working in the VFX industry, 
+                            contributing to various film and television projects primarily
+                            as a compositor and matte painter. You can check out my work in the link.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-4">
+                <div class="card">
+                    <img src="media/VFX.jpg" class="card-img-top" alt="VFX Project">
+                    <div class="card-body ">
+                        <h3 class="card-title">VFX</h3>
+                        <p class="card-text">VFX demo reel.</p>
+                        <a target="_blank" href="https://vimeo.com/960723524?fl=pl&fe=sh" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills" class="container text-center">
