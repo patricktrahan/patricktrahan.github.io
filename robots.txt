@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://patricktrahan.github.io/sitemap.xml
+
+# Optional host directive (some crawlers use this)
+Host: patricktrahan.github.io

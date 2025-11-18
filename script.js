@@ -35,6 +35,7 @@ function openLightbox(imageSrc, index = 0, title = 'Untitled', description = '')
     const totalSpan = document.getElementById('lightbox-total');
     const captionTitle = document.getElementById('caption-title');
     const captionDescription = document.getElementById('caption-description');
+    if (!lightbox || !lightboxImg) return;
     
     lightboxImg.src = imageSrc;
     currentSpan.textContent = currentLightboxIndex + 1;
@@ -55,6 +56,7 @@ function openLightbox(imageSrc, index = 0, title = 'Untitled', description = '')
 
 function closeLightbox() {
     const lightbox = document.getElementById('lightbox');
+    if (!lightbox) return;
     lightbox.classList.remove('active');
     document.body.style.overflow = 'auto';
 }
@@ -75,6 +77,7 @@ function navigateLightbox(direction) {
     const currentSpan = document.getElementById('lightbox-current');
     const captionTitle = document.getElementById('caption-title');
     const captionDescription = document.getElementById('caption-description');
+    if (!lightboxImg) return;
     
     lightboxImg.style.opacity = '0';
     setTimeout(() => {
@@ -92,16 +95,19 @@ function navigateLightbox(direction) {
 }
 
 // Touch/swipe support
+
 const lightbox = document.getElementById('lightbox');
 
-lightbox.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-});
+if (lightbox) {
+    lightbox.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
 
-lightbox.addEventListener('touchend', (e) => {
-    touchEndX = e.changedTouches[0].screenX;
-    handleSwipe();
-});
+    lightbox.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+}
 
 function handleSwipe() {
     const swipeThreshold = 50;
@@ -119,11 +125,13 @@ function handleSwipe() {
 }
 
 // Close lightbox when clicking outside image
-lightbox.addEventListener('click', function(e) {
-    if (e.target === this) {
-        closeLightbox();
-    }
-});
+if (lightbox) {
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeLightbox();
+        }
+    });
+}
 
 // ============================================
 // MODAL FUNCTIONALITY
@@ -170,7 +178,6 @@ document.querySelectorAll('.modal').forEach(modal => {
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         // Close lightbox if open
-        const lightbox = document.getElementById('lightbox');
         if (lightbox && lightbox.classList.contains('active')) {
             closeLightbox();
             return;
@@ -184,7 +191,7 @@ document.addEventListener('keydown', function(e) {
     }
     
     // Navigate lightbox with arrow keys
-    if (document.getElementById('lightbox').classList.contains('active')) {
+    if (lightbox && lightbox.classList.contains('active')) {
         if (e.key === 'ArrowLeft') {
             navigateLightbox(-1);
         } else if (e.key === 'ArrowRight') {
