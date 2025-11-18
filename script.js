@@ -254,3 +254,19 @@ document.querySelectorAll('.work-card, .skill-category').forEach(card => {
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(card);
 });
+
+// ============================================
+// FOOTER COPYRIGHT YEAR UPDATE
+// ============================================
+
+(function() {
+    try {
+        var yElem = document.getElementById('copy-year');
+        if (yElem) {
+            var year = new Date().getFullYear();
+            yElem.textContent = year;
+        }
+    } catch (e) {
+        // fail silently
+    }
+})();

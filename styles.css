@@ -833,3 +833,17 @@ section {
         padding: 2rem 1.5rem;
     }
 }
+
+/* Footer */
+.site-footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    margin-top: 2rem;
+}
+.site-footer .site-footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--text-dim);
+    font-size: 0.95rem;
+}
